@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <i class="fa fa-music fa-3x" aria-hidden="true"></i>
+    </header>
+
+   <main>
+      <section class="content-wrapper">
+        <div class="left-col">
+          <img src="images/kizzdaniel.jpg" alt="" class="artist-image" >
+        </div>
+
+        <div class="right-col">
+          <h1 class="now-playing">Now playing</h1>
+          <div class="wave"></div>
+
+          <img src="images/kizzdaniel.jpg" alt="" class=" artist-image-disc">
+          <h2 class="song-name">track name</h2>
+          <h3 class="artist">artist</h3>
+
+          <div class="duration-keys">
+            <div class="current-time">00:00</div>
+            <input type="range" id="song-slider" min="0" max="100" onchange="change_duration()">
+            <div class="duration-time">00:00</div>
+          </div>
+        
+          <div class="control-buttons keys">
+            <!-- <button class="shuffle"><i class="fa fa-random fa-1.5x" aria-hidden="true"></i> </button>    -->
+           <button class="previous-track"><i class="fa fa-step-backward " aria-hidden="true"></i></button>
+              <button class="play-track"><i class="fa fa-play " aria-hidden="true"></i></button>
+            <button class="next-track"><i class="fa fa-step-forward " aria-hidden="true"></i></button> 
+       
+          </div>
+        
+        </div>
+
+
+      </section>
+    </main>
+
+  </div>
+  
+
+ <script src="myscript/index.js" charset="utf-8"></script>
+
+  </script>
+</body>
+
+</html>
