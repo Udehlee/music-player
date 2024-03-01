@@ -44,12 +44,12 @@ let song_list = [
   {
     name: "Feran mi Instrumental",
     artist: "Kizzdaniel ft Johnny Drille",
-    image: "Images/bg-unsplash.jpg",
+    image: "Images/headphone.png",
     path: "sounds/kizz-daniel-ft-johnny-drille-feran-mi_instrumental.mp3"
   },
   {
     name: "Johnny Instrumental",
-    artist: "Yemi Alade",
+    artist: "Yemi",
     image: "Images/headphone.png",
     path: "sounds/Yemi_Alade_-_Johnny_Instrumental_afrodjpool.com.mp3"
   }
@@ -73,10 +73,10 @@ function updateSongDetails() {
 
   updateTimer = setInterval(sliderThumbRange, 1000);
 
-  audio_Player.addEventListener('ended', nextSong); //play next song when the present finished playing
+//play next song when the present finished playing
+  audio_Player.addEventListener('ended', nextSong); 
 
-  //  // Apply a random background color
-  //  random_bg_color();
+ 
 }
 
 
